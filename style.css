@@ -1,0 +1,134 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+
+#navbar{
+    width: 100%;
+    background-color: black;
+    height: 80px;
+    font-size: 30px;
+    border: 1px solid gray;
+}
+
+#navbar ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    background-color: black;
+}
+
+#navbar li{
+    margin: 10px
+}
+
+#navbar input{
+    height: 15px;
+    width: 60%;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+button{
+    color: black;
+    height: 40px;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 30px;
+    background-color: lightgreen;
+}
+button:hover{
+    color: black;
+    height: 40px;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 30px;
+    background-color: lightgreen;
+    cursor: pointer;
+}
+button:active{
+    color: black;
+    height: 40px;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 30px;
+    background-color: lightblue;
+    cursor: pointer;
+}
+
+#mainBody{
+    height: 400px;
+    width: 100%;
+    background : linear-gradient(#5f2c82,#4a569d);
+}
+
+#mainBody ul{
+    margin: 0px;
+    border-top: 1px solid red;    
+}
+
+#mainBody ul li{
+    height: 30px;
+    background-color: white;
+    margin: 10px;
+    width: 30%;
+    list-style: none;
+    border-radius: 10px;
+}
+
+#playbar{
+    margin-top: 115px;
+    height: 40px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+#playbar input{
+    width: 80%;
+    margin-top: 0px;
+    cursor: pointer;
+}
+
+#play{
+    height: 80px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#playButton{
+    cursor: pointer;
+}
+
+#audio{
+    display: flex;
+    flex-direction: column;
+}
+
+.player{
+    margin: 30px;
+    width: 30%;
+    height: 30px;
+}
+
+#name {
+    position: absolute;
+    top: 50px;
+    left: 30%;
+}
+
+#name p{
+    margin: 65px;
+    font-size: 20px;
+    color : black;
+}
+
+#more{
+    margin-left: -180px;
+}
