@@ -1,25 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spotify Clone</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    
     <div id="container">
-        <div id="navbar" >
-            <img src="spotify.png" alt="Logo" width="60px">
-            <h1>Spotify clone</h1>
+      <div id="navbar">
+        <img src="spotify.png" alt="Logo" width="60px" />
+        <h1>Spotify clone</h1>
+      </div>
+
+      <!-- card -->
+      <div id="bodyPart">
+        <div id="one" class="song">
+          <img src="more.png" width="30px" />
+          <p>Song name</p>
+          <img src="multimedia.png" width="30px" />
         </div>
-        <div id="bodyPart">
-            <div class="song">
-                <img src="more.png"  width="30px">
-                <p>Song name </p>
-                <img src="multimedia.png" width="30px" >
-            </div>
-        </div>
+      </div>
+
+      <!-- footer -->
+      <div id="footer">
+        <img src="multimedia.png" alt="playButton" width="50" />
+        <input id="playing" type="range" min="0" max="100" />
+      </div>
     </div>
 
-</body>
+
+    <script src="main.js"></script>
+  </body>
 </html>
