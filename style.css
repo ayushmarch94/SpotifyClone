@@ -82,3 +82,7 @@ h1{
 #footer img:hover{
   cursor: pointer;
 }
+
+#pauser{
+  margin: 20px;
+}

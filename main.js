@@ -66,3 +66,7 @@ pauser.addEventListener('click',()=>{
     currentSong.pause();
     currentSong.currentTime = 0;
 })
+
+setInterval(function(){
+    let percentage=(songs.song1.currentTime/songs.song1.duration)*100;
+})
