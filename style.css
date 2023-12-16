@@ -26,11 +26,21 @@ h1{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  background-color: rgb(31, 31, 31);
 }
 
 .song{
-  background-color: rgb(57, 57, 57);
-  height: 50px;
-  width: 400px;
+  background-color: black;
+  height: 70px;
+  width: 30vw;
+  min-width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 25px;
+}
+
+.song img{
+  margin: 20px;
 }
