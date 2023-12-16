@@ -8,56 +8,14 @@
 </head>
 <body>
     <div id="container">
-        <div id="navbar">
-            <ul>
-                <li><img src="download.png" alt="spotify logo" width="60"></li>
-                <li>Spotify</li>
-                <div>
-                    <input type="text" placeholder="search song">
-                    <button>search</button>
-                </div>
-            </ul>
+        <div id="navbar" >
+            <img src="spotify.png" alt="Logo" width="60px">
+            <h1>Spotify clone</h1>
         </div>
-        <div id="mainBody">
-            <div id="audio">
-                <audio id="audio1" class="player" src="1.mp3" controls ></audio>
-                <audio class="player"  src="2.mp3" controls ></audio>
-                <audio class="player"  src="3.mp3" controls ></audio>
-            </div>
-            <div id="name">
-                <p>kabhi kabhi</p>
-                <p>Heat Waves</p>
-                <p>Animal</p>
-                <img id="more" src="more.png" alt="more songs" width="30px">
-            </div>
-        <div id="playbar">
-            <input id="progress" type="range" min="0" value="0">
-        </div>
-        <div id="play">
-            <img id="playButton" src="multimedia.png" alt="play logo" width="50"> 
+        <div id="bodyPart">
+            <div class="song"></div>
         </div>
     </div>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const playButton = document.getElementById('playButton');
-            const audio = document.getElementById('audio1'); 
-            const progress = document.getElementById('progress');
-    
-            playButton.addEventListener('click', function () {
-                if (audio.paused) {
-                    audio.play();
-                } else {
-                    audio.pause();
-                }
-            });
-    
-            audio.addEventListener('timeupdate', function () {
-                const currentTime = audio.currentTime;
-                const duration = audio.duration;
-                const progressPercent = (currentTime / duration) * 100;
-                progress.value = progressPercent;
-            });
-        });
-    </script>    
+
 </body>
 </html>
