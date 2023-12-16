@@ -59,3 +59,10 @@ clickedOn5.addEventListener("click", () => {
 clickedOn6.addEventListener("click", () => {
     playOrPause(songs.song6);
 });
+
+var pauser =document.getElementById("pauser");
+
+pauser.addEventListener('click',()=>{
+    currentSong.pause();
+    currentSong.currentTime = 0;
+})
