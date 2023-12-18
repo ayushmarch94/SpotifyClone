@@ -13,9 +13,8 @@ let songs = [
 ];
 
 
-seekbar.addEventListener('timeupdate',()=>{
+audio.addEventListener('timeupdate',()=>{
     let seek=parseInt((audio.currentTime/audio.duration)*100);
-    console.log('time updated');
     seekbar.value=seek;
 })
 
@@ -29,4 +28,8 @@ pauser.addEventListener('click',()=>{
         audio.pause();
         pauser.src ='../images/play.png';
     }
+})
+
+seekbar.addEventListener('change',()=>{
+    audio.currentTime=seekbar.value*audio.duration/100;
 })
