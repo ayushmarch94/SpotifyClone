@@ -14,6 +14,7 @@
   align-items: center;
   color: white;
   background-color: black;
+  height: 15vh;
 }
 
 #navbar img{
@@ -25,7 +26,7 @@ h1{
 }
 
 #bodyPart {
-  height: 70vh;
+  height: 65vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -66,9 +67,13 @@ h1{
   margin: 20px;
 }
 
+.song p{
+  font-size: 15px;
+}
+
 #footer{
   background-color: black;
-  height: 100px;
+  height: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -84,5 +89,9 @@ h1{
 }
 
 #pauser{
-  margin: 20px;
+  margin: 10px;
+}
+#seekbar{
+  width: 70%;
+  cursor: pointer;
 }
